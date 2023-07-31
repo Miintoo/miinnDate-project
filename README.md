@@ -1,27 +1,36 @@
-# React + TypeScript + Vite
+# 미인데이트
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+공공데이터를 활용하는 데이터 장소 및 음식점을 추천하는 웹 서비스입니다. 
 
-Currently, two official plugins are available:
+## 구현 기능
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 검색기능
+- 검색된 결과물을 무한 스크롤로 구현
+- 검색 기능 비제어로 구현
+- 검색 및에 분류 선택으로 검색되도록 구현
+- 선택시 상세페이지 구현
+- 언어별로 다른 컨텐츠 보이도록 구현
 
-## Expanding the ESLint configuration
+## 기술 스택
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React
+- MUI
+- React-router-dom
+- Redux, Redux-toolkit
+- TypeScript
+- Axios
+- prettier, eslint
+- SASS
 
-- Configure the top-level `parserOptions` property like this:
+## 개발 목표
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- 대용량 데이터를 가공해 화면에 잘 렌더링하는법을 연습한다.
+- UX 법칙을 활용해 사용자에게 친화적인 사이트를 만들기를 연습한다.
+    - Skeleton 디자인 적용
+- AWS, S3, CloudFront를 활용해 정적 파일을 배포할 수 있도록 연습한다.
+- SEO 신경써서 서비스 등록하기
+- 검색시에 디바운싱 처리를 통해 api 요청 과부하 처리 연습한다
+- Grid 박스를 통해 명소 정리해서 보여주는 페이지를 연습한다.
+- 무한 스크롤을 통해 전체 데이터를 처리한다.
+- CSR에 단점을 개선하는 방법을 적용한다.
+- Not found 페이지 및 리다이렉트
