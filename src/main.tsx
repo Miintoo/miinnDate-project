@@ -1,10 +1,12 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
-import './index.css'
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Main from './page/main/Main.tsx';
+import './styles/global.scss';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Main />} />
+    </Routes>
+  </BrowserRouter>
+);
