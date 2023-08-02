@@ -1,16 +1,28 @@
 import Footer from '../../components/footer/Footer';
 import Header from '../../components/header/Header';
 import styles from './main.module.scss';
-import Home from '../../assets/home.jpg';
+import TypeIt from 'typeit-react';
+// import Home from '../../assets/home.jpg';
 
 export default function Main() {
   return (
     <>
       <Header />
-      <main>
+      <main className={styles.container}>
         <section>
-          <div className={styles.imgContainer}>
-            <img src={Home} className={styles.home} />
+          <div className={styles.contentContainer}>
+            <div className={styles.content}>
+              <p>사랑을 먹고사는</p>
+              <p>김민혁 천재입니다.</p>
+              <TypeIt
+                options={{
+                  strings: ['This will be typed!'],
+                  speed: 50,
+                  waitUntilVisible: true,
+                  loop: true
+                }}
+              />
+            </div>
           </div>
         </section>
       </main>
