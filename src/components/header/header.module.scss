@@ -1,0 +1,43 @@
+.header {
+  height: 5.94rem;
+
+  .headerInner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100%;
+    padding: 0 1.2rem;
+
+    .title {
+      font-size: 1.9rem;
+
+      cursor: pointer;
+    }
+
+    .buttonContainer {
+      width: 30%;
+      height: 100%;
+
+      nav {
+        height: 100%;
+        .buttonList {
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          height: 100%;
+
+          li {
+            font-size: 1.3rem;
+
+            cursor: pointer;
+
+            &:hover {
+              opacity: 0.5;
+            }
+          }
+        }
+      }
+    }
+  }
+}
