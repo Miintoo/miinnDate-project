@@ -1,5 +1,6 @@
 import Footer from '../../components/footer/Footer';
 import Header from '../../components/header/Header';
+import RecommendFood from '../../components/recommend/recommendFood/RecommendFood';
 import styles from './main.module.scss';
 import TypeIt from 'typeit-react';
 // import Home from '../../assets/home.jpg';
@@ -25,6 +26,7 @@ export default function Main() {
             </div>
           </div>
         </section>
+        <RecommendFood />
       </main>
       <Footer />
     </>
