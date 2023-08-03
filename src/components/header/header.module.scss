@@ -24,20 +24,21 @@
     }
 
     .buttonContainer {
-      width: 30%;
       height: 100%;
 
       nav {
         height: 100%;
         .buttonList {
           display: flex;
-          justify-content: space-evenly;
+          justify-content: space-between;
           align-items: center;
           height: 100%;
 
           li {
-            font-size: 1.3rem;
+            width: 10rem;
 
+            font-size: 1.3rem;
+            text-align: center;
             cursor: pointer;
 
             &:hover {
