@@ -1,6 +1,7 @@
 import Footer from '../../components/footer/Footer';
 import Header from '../../components/header/Header';
 import RecommendFood from '../../components/recommend/recommendFood/RecommendFood';
+import RecommendLocation from '../../components/recommend/recommendLocation/RecommendLocation';
 import styles from './main.module.scss';
 import TypeIt from 'typeit-react';
 // import Home from '../../assets/home.jpg';
@@ -9,8 +10,8 @@ export default function Main() {
   return (
     <>
       <Header />
-      <main className={styles.container}>
-        <section>
+      <main className={styles.main}>
+        <section className={styles.container}>
           <div className={styles.contentContainer}>
             <div className={styles.content}>
               <p>사랑을 먹고사는</p>
@@ -27,6 +28,7 @@ export default function Main() {
           </div>
         </section>
         <RecommendFood />
+        <RecommendLocation />
       </main>
       <Footer />
     </>
