@@ -1,0 +1,15 @@
+.footer {
+  padding: 4rem 0;
+  background-color: #141414;
+  color: gray;
+
+  .container {
+    padding: 0 1rem;
+    .title {
+      font-size: 2.2rem;
+    }
+    .content {
+      margin-top: 1.3rem;
+    }
+  }
+}
