@@ -12,25 +12,33 @@ export default function RecommendFood() {
         <ul className={styles.itemList}>
           <li>
             <a href="">
-              <img src={HomeImage} alt="" />
+              <div className={styles.imgContainer}>
+                <img src={HomeImage} alt="" />
+              </div>
               <h4>이름이름이름빵집</h4>
             </a>
           </li>
           <li>
             <a href="">
-              <img src={HomeImage} alt="" />
+              <div className={styles.imgContainer}>
+                <img src={HomeImage} alt="" />
+              </div>
               <h4>이름이름이름빵집</h4>
             </a>
           </li>
           <li>
             <a href="">
-              <img src={HomeImage} alt="" />
+              <div className={styles.imgContainer}>
+                <img src={HomeImage} alt="" />
+              </div>
               <h4>이름이름이름빵집</h4>
             </a>
           </li>
           <li>
             <a href="">
-              <img src={HomeImage} alt="" />
+              <div className={styles.imgContainer}>
+                <img src={HomeImage} alt="" />
+              </div>
               <h4>이름이름이름빵집</h4>
             </a>
           </li>
